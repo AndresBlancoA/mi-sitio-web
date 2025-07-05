@@ -1,0 +1,123 @@
+
+/*ESTILOS RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #ffd35c;
+}
+
+
+#header {
+    width: 100%;  
+    height: 80%;
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0;
+}
+
+
+
+
+/* Clase para párrafos destacados */
+.p2 {
+    color: rgb(234, 221, 36);
+    font-size: 1.1em;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Caja con padding y borde */
+.content-box {
+    width: auto;
+    background-color: coral;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+#main{
+    background-color: darkslategray;
+}
+
+
+.box-reseña {
+    justify-content: center;
+    margin-top: 20px;
+    border: 30px solid
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(242, 241, 251);
+    overflow: auto;
+    margin: 0 auto;
+}
+
+
+  
+
+  /* ==== FOOTER FLEX ==== */
+#footer{
+    display: flex;
+    flex-wrap: wrap;          /* se apila en pantallas chicas */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;              /* separación entre bloques */
+    padding: 1.5rem 2rem;
+    background: #ffd35c;      /* dorado suave; cámbialo si quieres */
+    color: #222;
+    text-align: center;       /* para móvil */
+  }
+  
+  /* Logo a la izquierda */
+  .footer-logo img{
+    max-height: 70px;
+  }
+  
+  /* Texto central */
+  .footer-text h5{
+    margin: 0;
+    font-family: "Press Start 2P", monospace; /* fuente retro (opcional) */
+    font-size: 1.15rem;
+  }
+  .footer-text p{
+    margin: 0.25rem 0 0;
+    font-size: .9rem;
+    line-height: 1.3;
+  }
+  
+  /* RRSS a la derecha */
+  .footer-rrss{
+    display: flex;
+    gap: 18px;
+  }
+  .footer-rrss img{
+    width: 34px;
+    height: auto;
+    transition: transform .3s ease;
+  }
+  .footer-rrss img:hover{
+    transform: scale(1.15);
+  }
+  
+  /* ===== Responsive: apilar todo en móvil ===== */
+  @media (max-width: 575px){
+    #footer{
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-rrss{
+      justify-content: center;
+    }
+  }
+  
