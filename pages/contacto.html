@@ -2,32 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
-</head>
-<body>
-   <header> <!-- EJE #1 = ENCABEZADO Y TITULO -->
-    <h1>CONTACTO</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--LIBRERIA BTS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/style.css">
+ <title>Contacto</title>
+ </head>
+   <body>
+      <header id="header"> 
+      
+       <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="../index.html">Inicio</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="pages/sobre_mi.html">Sobre mi</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" aria-disabled="true" href="pages/trabajo.html">Trabajo</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+    
+      </header> 
+   <main id="main"> <!-- EJE #2 = CONTENIDO / MAIN -->
+      <section class="content-box-2">
 
-     <nav> <!-- NAVEGACIÓN -->
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xxxxxx">
+          </div> 
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+      </section>
+      
+   </section>
+   <p class="p2">
+      Un podcast entre amigos separados por cientos de kilómetros.
+     </p>
+</main>
+<footer id="footer">
+<!-- Logo -->
+<div class="footer-logo">
+ <img src="../icons/Component 9.png" alt="Logo Páramo">
+</div>
+<!-- Texto central -->
+<div class="footer-text">
+ <h5>A 100tos de Km</h5>
+ <p>Un podcast donde la distancia no impide la conexión</p>
+</div>
+<!-- Redes sociales -->
+<div class="footer-rrss">
+ <a href="https://www.youtube.com/@100tosdekmPodcast"><img src="../icons/youtube.png"   alt="YouTube"></a>
+ <a href="https://www.instagram.com/100tosdekmpodcast/"><img src="../icons/instagram-2.png" alt="Instagram"></a>
+ <a href="https://www.tiktok.com/@100tosdekmpodcast"><img src="../icons/tik-tok.png"    alt="TikTok"></a>
+</div>
+</footer>
 
-       <ol>
-        <li><a href="../index.html">inicio</a></li>
-        <li><a href="#">contacto</a></li>
-        <li><a href="proyectos.html">proyectos</a></li>
-        <li><a href="sobre_mi.html">sobre mi</a></li>
-        <li><a href="trabajo.html">trabajo</a></li> 
-       </ol>
-
-     </nav>
-   </header> 
-   <main> <!-- EJE #2 = CONTENIDO / MAIN -->
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, alias ex voluptatibus commodi dolore vel? Minima corrupti cum iste harum reiciendis natus laudantium et eveniet eaque asperiores optio inventore, eum consequuntur est commodi quae quaerat odio nam perferendis, error sit. Aut doloribus ex sunt consequatur itaque, optio aspernatur saepe perferendis consequuntur officia minima necessitatibus corporis sequi quidem libero! Commodi dolores quia, neque temporibus unde rerum, similique sunt possimus fugit eos corrupti. Unde iusto eius alias impedit. Similique eveniet soluta numquam corporis sed explicabo sit autem nobis omnis voluptas quod atque beatae at, tempore suscipit quis recusandae itaque. Veniam, consectetur 
-   </main>
-
-   <footer> <!-- EJE #3 = PIE DE PÁGINA / FOOTER -->
-
-   </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

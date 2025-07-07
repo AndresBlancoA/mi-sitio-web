@@ -1,11 +1,10 @@
 
 /*ESTILOS RESET*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+*{ 
+  margin:0; padding:0; box-sizing:border-box; 
 }
+
 
 body {
     background-color: #ffd35c;
@@ -34,7 +33,6 @@ body {
 /* Caja con padding y borde */
 .content-box {
     width: auto;
-    background-color: coral;
     text-align: center;
 }
 
@@ -109,7 +107,7 @@ li{
   .footer-rrss img:hover{
     transform: scale(1.15);
   }
-  
+
   /* ===== Responsive: apilar todo en móvil ===== */
   @media (max-width: 575px){
     #footer{
@@ -120,4 +118,31 @@ li{
       justify-content: center;
     }
   }
-  
+
+.content-box{
+  margin-bottom:  4rem;
+}
+.content-box-2{
+  margin-bottom: 4rem;
+}
+
+/* Limita su tamaño y lo centra */
+#carouselExampleIndicators{
+  max-width: 960px;      /* ancho máximo */
+  max-height: 520px;     /* alto máximo */
+  margin: 0 auto 3rem;   /* auto: lo centra | 3rem: margen inferior */
+  overflow: hidden;      /* oculta lo que sobresalga */
+}
+
+/* Las imágenes rellenan sin deformarse */
+#carouselExampleIndicators .carousel-inner img{
+  height: 100%;          /* toma todo el alto disponible */
+  object-fit: cover;     /* recorta manteniendo proporción */
+}
+
+@media (max-width: 575px){
+  #carouselExampleIndicators{
+    max-width: 100%;     /* ocupa todo el ancho del móvil */
+    max-height: 240px;   /* más bajito en pantallas chicas */
+  }
+}
