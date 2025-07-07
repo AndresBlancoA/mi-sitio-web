@@ -24,17 +24,15 @@ body {
 
 /* Clase para párrafos destacados */
 .p2 {
-    color: rgb(234, 221, 36);
-    font-size: 1.1em;
-    padding: 10px 20px;
-    text-align: center;
+  margin-top: 0.5rem; /* ajustable */
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: rgb(234, 221, 36);
+  text-align: center;
 }
 
+
 /* Caja con padding y borde */
-.content-box {
-    width: auto;
-    text-align: center;
-}
 
 li{
     list-style: none;
@@ -119,20 +117,18 @@ li{
     }
   }
 
-.content-box{
-  margin-bottom:  4rem;
-}
 .content-box-2{
   margin-bottom: 4rem;
 }
 
 /* Limita su tamaño y lo centra */
-#carouselExampleIndicators{
-  max-width: 960px;      /* ancho máximo */
-  max-height: 520px;     /* alto máximo */
-  margin: 0 auto 3rem;   /* auto: lo centra | 3rem: margen inferior */
-  overflow: hidden;      /* oculta lo que sobresalga */
+#carouselExampleIndicators {
+  max-width: 960px;
+  max-height: 520px;
+  margin: 0 auto 1rem;  /* <--- Cambiado de 3rem a 1rem */
+  overflow: hidden;
 }
+
 
 /* Las imágenes rellenan sin deformarse */
 #carouselExampleIndicators .carousel-inner img{
