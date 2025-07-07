@@ -17,7 +17,7 @@
              <span class="navbar-toggler-icon"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
-             <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
                <li class="nav-item">
                  <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
                </li>
@@ -37,8 +37,10 @@
     
       </header> 
    <main id="main"> <!-- EJE #2 = CONTENIDO / MAIN -->
-      <section class="content-box-2">
+    <section class="content-box-2 container py-5">
+      <h2 class="text-center text-light mb-4">¡Escríbenos!</h2>
 
+      <form class="mx-auto" style="max-width: 520px;">
          <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -54,7 +56,13 @@
           
       </section>
       
-   </section>
+   <button type="submit"
+        class="btn btn-warning d-block mx-auto px-4">
+  Enviar
+  </button>
+    </form>
+    </section>
+
    <p class="p2">
       Un podcast entre amigos separados por cientos de kilómetros.
      </p>

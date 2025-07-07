@@ -13,9 +13,6 @@ body {
 
 #header {
     width: 100%;  
-    height: 80%;
-    display: flex;
-    justify-content: center; 
     padding: 10px 0;
 }
 
@@ -141,4 +138,21 @@ li{
     max-width: 100%;     /* ocupa todo el ancho del móvil */
     max-height: 240px;   /* más bajito en pantallas chicas */
   }
+}
+
+.content-box-2 {
+  margin: 2rem auto 4rem;
+  padding: 1.5rem 1rem;
+  max-width: 960px;
+}
+
+.card-container{
+  display: flex;          /* activa Flexbox */
+  justify-content: center;/* opcional: centra el bloque completo */
+  gap: 1.5rem;            /* espacio entre cards */
+  flex-wrap: wrap;        /* para que en móvil se rompa a otra línea */
+}
+
+.card-container .card{
+  width: 18rem;           /* ancho fijo para cada card */
 }

@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Trabajo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Trabaja con nosotros</title>
 </head>
 <body>
-   <header> <!-- EJE #1 = ENCABEZADO Y TITULO -->
-    <h1>TRABAJO</h1>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navWork">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navWork">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre_mi.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Trabajo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="container py-5">
+      <h2 class="text-center text-light mb-3">¿Colaboramos?</h2>
+      <p class="text-center text-light mb-4">Si deseas patrocinar o colaborar, déjanos tu mensaje</p>
 
-     <nav> <!-- NAVEGACIÓN -->
-
-       <ol>
-        <li><a href="../index.html">inicio</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-        <li><a href="proyectos.html">proyectos</a></li>
-        <li><a href="sobre_mi.html">sobre mi</a></li>
-        <li><a href="#">trabajo</a></li> 
-       </ol>
-
-     </nav>
-   </header> 
-   <main> <!-- EJE #2 = CONTENIDO / MAIN -->
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, alias ex voluptatibus commodi dolore vel? Minima corrupti cum iste harum reiciendis natus laudantium et eveniet eaque asperiores optio inventore, eum consequuntur est commodi quae quaerat odio nam perferendis, error sit. Aut doloribus ex sunt consequatur itaque, optio aspernatur saepe perferendis consequuntur officia minima necessitatibus corporis sequi quidem libero! Commodi dolores quia, neque temporibus unde rerum, similique sunt possimus fugit eos corrupti. Unde iusto eius alias impedit. Similique eveniet soluta numquam corporis sed explicabo sit autem nobis omnis voluptas quod atque beatae at, tempore suscipit quis recusandae itaque. Veniam, consectetur 
-   </main>
-
-   <footer> <!-- EJE #3 = PIE DE PÁGINA / FOOTER -->
-
-   </footer>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nameInput" class="form-label text-light">Nombre</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Tu nombre" />
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label text-light">Correo</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="nombre@correo.com" />
+        </div>
+        <div class="mb-3">
+          <label for="msgInput" class="form-label text-light">Mensaje</label>
+          <textarea class="form-control" id="msgInput" rows="4" placeholder="Cuéntanos tu propuesta..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning d-block mx-auto px-4">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-logo"><img src="../icons/Component 9.png" alt=""></div>
+    <div class="footer-text">
+      <h5>A 100tos de Km</h5>
+      <p>Un podcast donde la distancia no impide la conexión</p>
+    </div>
+    <div class="footer-rrss">
+      <a href="https://www.youtube.com/@100tosdekmPodcast"><img src="../icons/youtube.png" alt=""></a>
+      <a href="https://www.instagram.com/100tosdekmpodcast/"><img src="../icons/instagram-2.png" alt=""></a>
+      <a href="https://www.tiktok.com/@100tosdekmpodcast"><img src="../icons/tik-tok.png" alt=""></a>
+    </div>
+  </footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

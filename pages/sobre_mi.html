@@ -1,33 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Sobre mi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Sobre mí</title>
 </head>
 <body>
-   <header> <!-- EJE #1 = ENCABEZADO Y TITULO -->
-    <h1>SOBRE MI</h1>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navSobre">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navSobre">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="trabajo.html">Trabajo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="container py-5">
+      <h2 class="text-center text-light mb-4">Conoce al equipo</h2>
 
-     <nav> <!-- NAVEGACIÓN -->
+      <div class="card-container">
 
-       <ol>
-        <li><a href="../index.html">inicio</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-        <li><a href="proyectos.html">proyectos</a></li>
-        <li><a href="#">sobre mi</a></li>
-        <li><a href="trabajo.html">trabajo</a></li> 
-       </ol>
+        <!-- CARD 1 -->
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="../images/paola.jpg" class="card-img-top" alt="Paola">
+            <div class="card-body">
+              <h5 class="card-title">Paola — Creativa</h5>
+              <p class="card-text">Extrovertida, motivadora y fan de las ideas locas.</p>
+            </div>
+          </div>
+        </div>
 
-     </nav>
-   </header> 
-   <main> <!-- EJE #2 = CONTENIDO / MAIN -->
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, alias ex voluptatibus commodi dolore vel? Minima corrupti cum iste harum reiciendis natus laudantium et eveniet eaque asperiores optio inventore, eum consequuntur est commodi quae quaerat odio nam perferendis, error sit. Aut doloribus ex sunt consequatur itaque, optio aspernatur saepe perferendis consequuntur officia minima necessitatibus corporis sequi quidem libero! Commodi dolores quia, neque temporibus unde rerum, similique sunt possimus fugit eos corrupti. Unde iusto eius alias impedit. Similique eveniet soluta numquam corporis sed explicabo sit autem nobis omnis voluptas quod atque beatae at, tempore suscipit quis recusandae itaque. Veniam, consectetur 
-   </main>
+        <!-- CARD 2 -->
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="../images/andres.jpg" class="card-img-top" alt="Andrés">
+            <div class="card-body">
+              <h5 class="card-title">Andrés — Organizador</h5>
+              <p class="card-text">Alegre, estructurado y quien lleva el timón del podcast.</p>
+            </div>
+          </div>
+        </div>
 
-   <footer> <!-- EJE #3 = PIE DE PÁGINA / FOOTER -->
+        <!-- CARD 3 -->
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="../images/albany.jpg" class="card-img-top" alt="Albany">
+            <div class="card-body">
+              <h5 class="card-title">Albany — Emprendedora</h5>
+              <p class="card-text">Habladora, dinámica y siempre activa en redes.</p>
+            </div>
+          </div>
+        </div>
 
-   </footer>
+        <!-- CARD 4 -->
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img src="../images/yona.jpg" class="card-img-top" alt="Yonaije">
+            <div class="card-body">
+              <h5 class="card-title">Yonaije — Metódica</h5>
+              <p class="card-text">Ordenada, reservada y gran jugadora en equipo.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.row -->
+    </section>
+  </main>
+
+  <!-- FOOTER igual al index -->
+  <footer id="footer">
+    <div class="footer-logo"><img src="../icons/Component 9.png" alt=""></div>
+    <div class="footer-text">
+      <h5>A 100tos de Km</h5>
+      <p>Un podcast donde la distancia no impide la conexión</p>
+    </div>
+    <div class="footer-rrss">
+      <a href="https://www.youtube.com/@100tosdekmPodcast"><img src="../icons/youtube.png" alt=""></a>
+      <a href="https://www.instagram.com/100tosdekmpodcast/"><img src="../icons/instagram-2.png" alt=""></a>
+      <a href="https://www.tiktok.com/@100tosdekmpodcast"><img src="../icons/tik-tok.png" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
