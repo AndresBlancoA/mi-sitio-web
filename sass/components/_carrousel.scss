@@ -1,0 +1,21 @@
+/* Limita su tamaño y lo centra */
+#carouselExampleIndicators {
+  max-width: 960px;
+  max-height: 520px;
+  margin: 0 auto 1rem;  /* <--- Cambiado de 3rem a 1rem */
+  overflow: hidden;
+}
+
+
+/* Las imágenes rellenan sin deformarse */
+#carouselExampleIndicators .carousel-inner img{
+  height: 100%;          /* toma todo el alto disponible */
+  object-fit: cover;     /* recorta manteniendo proporción */
+}
+
+@media (max-width: 575px){
+  #carouselExampleIndicators{
+    max-width: 100%;     /* ocupa todo el ancho del móvil */
+    max-height: 240px;   /* más bajito en pantallas chicas */
+  }
+}

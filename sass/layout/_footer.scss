@@ -1,0 +1,54 @@
+ /* ==== FOOTER FLEX ==== */
+#footer{
+    display: flex;
+    flex-wrap: wrap;          /* se apila en pantallas chicas */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;              /* separación entre bloques */
+    padding: 1.5rem 2rem;
+    background: #ffd35c;      /* dorado suave; cámbialo si quieres */
+    color: #222;
+    text-align: center;       /* para móvil */
+  }
+  
+  /* Logo a la izquierda */
+  .footer-logo img{
+    max-height: 70px;
+  }
+  
+  /* Texto central */
+  .footer-text h5{
+    margin: 0;
+    font-family: "Press Start 2P", monospace; /* fuente retro (opcional) */
+    font-size: 1.15rem;
+  }
+  .footer-text p{
+    margin: 0.25rem 0 0;
+    font-size: .9rem;
+    line-height: 1.3;
+  }
+  
+  /* RRSS a la derecha */
+  .footer-rrss{
+    display: flex;
+    gap: 18px;
+  }
+  .footer-rrss img{
+    width: 34px;
+    height: auto;
+    transition: transform .3s ease;
+  }
+  .footer-rrss img:hover{
+    transform: scale(1.15);
+  }
+
+  /* ===== Responsive: apilar todo en móvil ===== */
+  @media (max-width: 575px){
+    #footer{
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-rrss{
+      justify-content: center;
+    }
+  }

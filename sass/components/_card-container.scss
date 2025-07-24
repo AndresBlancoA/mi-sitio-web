@@ -1,0 +1,10 @@
+.card-container{
+  display: flex;          /* activa Flexbox */
+  justify-content: center;/* opcional: centra el bloque completo */
+  gap: 1.5rem;            /* espacio entre cards */
+  flex-wrap: wrap;        /* para que en móvil se rompa a otra línea */
+}
+
+.card-container .card{
+  width: 18rem;           /* ancho fijo para cada card */
+}

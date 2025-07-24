@@ -1,0 +1,63 @@
+/*ESTILOS RESET*/
+
+*{ 
+  margin:0; padding:0; box-sizing:border-box; 
+}
+
+
+body {
+    background-color: #ffd35c;
+}
+
+
+/* Clase para párrafos destacados */
+.p2 {
+  margin-top: 0.5rem; /* ajustable */
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: rgb(234, 221, 36);
+  text-align: center;
+}
+
+
+/* Caja con padding y borde */
+
+li{
+    list-style: none;
+}
+
+
+
+#main{
+    background-color: darkslategray;
+}
+
+.box-reseña {
+    justify-content: center;
+    margin-top: 20px;
+    border: 30px solid
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(242, 241, 251);
+    overflow: auto;
+    margin: 0 auto;
+}
+
+
+  
+
+ 
+.content-box-2{
+  margin-bottom: 4rem;
+}
+
+
+
+.content-box-2 {
+  margin: 2rem auto 4rem;
+  padding: 1.5rem 1rem;
+  max-width: 960px;
+}

@@ -1,23 +1,15 @@
-
+@charset "UTF-8";
+/*Módulos base*/
 /*ESTILOS RESET*/
-
-*{ 
-  margin:0; padding:0; box-sizing:border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 body {
-    background-color: #ffd35c;
+  background-color: #ffd35c;
 }
-
-
-#header {
-    width: 100%;  
-    padding: 10px 0;
-}
-
-
-
 
 /* Clase para párrafos destacados */
 .p2 {
@@ -28,116 +20,31 @@ body {
   text-align: center;
 }
 
-
 /* Caja con padding y borde */
-
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-
-
-#main{
-    background-color: darkslategray;
+#main {
+  background-color: darkslategray;
 }
-
 
 .box-reseña {
-    justify-content: center;
-    margin-top: 20px;
-    border: 30px solid
+  justify-content: center;
+  margin-top: 20px;
+  border: 30px solid;
 }
 
 .box1 {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(242, 241, 251);
-    overflow: auto;
-    margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(242, 241, 251);
+  overflow: auto;
+  margin: 0 auto;
 }
 
-
-  
-
-  /* ==== FOOTER FLEX ==== */
-#footer{
-    display: flex;
-    flex-wrap: wrap;          /* se apila en pantallas chicas */
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;              /* separación entre bloques */
-    padding: 1.5rem 2rem;
-    background: #ffd35c;      /* dorado suave; cámbialo si quieres */
-    color: #222;
-    text-align: center;       /* para móvil */
-  }
-  
-  /* Logo a la izquierda */
-  .footer-logo img{
-    max-height: 70px;
-  }
-  
-  /* Texto central */
-  .footer-text h5{
-    margin: 0;
-    font-family: "Press Start 2P", monospace; /* fuente retro (opcional) */
-    font-size: 1.15rem;
-  }
-  .footer-text p{
-    margin: 0.25rem 0 0;
-    font-size: .9rem;
-    line-height: 1.3;
-  }
-  
-  /* RRSS a la derecha */
-  .footer-rrss{
-    display: flex;
-    gap: 18px;
-  }
-  .footer-rrss img{
-    width: 34px;
-    height: auto;
-    transition: transform .3s ease;
-  }
-  .footer-rrss img:hover{
-    transform: scale(1.15);
-  }
-
-  /* ===== Responsive: apilar todo en móvil ===== */
-  @media (max-width: 575px){
-    #footer{
-      flex-direction: column;
-      text-align: center;
-    }
-    .footer-rrss{
-      justify-content: center;
-    }
-  }
-
-.content-box-2{
+.content-box-2 {
   margin-bottom: 4rem;
-}
-
-/* Limita su tamaño y lo centra */
-#carouselExampleIndicators {
-  max-width: 960px;
-  max-height: 520px;
-  margin: 0 auto 1rem;  /* <--- Cambiado de 3rem a 1rem */
-  overflow: hidden;
-}
-
-
-/* Las imágenes rellenan sin deformarse */
-#carouselExampleIndicators .carousel-inner img{
-  height: 100%;          /* toma todo el alto disponible */
-  object-fit: cover;     /* recorta manteniendo proporción */
-}
-
-@media (max-width: 575px){
-  #carouselExampleIndicators{
-    max-width: 100%;     /* ocupa todo el ancho del móvil */
-    max-height: 240px;   /* más bajito en pantallas chicas */
-  }
 }
 
 .content-box-2 {
@@ -146,13 +53,99 @@ li{
   max-width: 960px;
 }
 
-.card-container{
-  display: flex;          /* activa Flexbox */
-  justify-content: center;/* opcional: centra el bloque completo */
-  gap: 1.5rem;            /* espacio entre cards */
-  flex-wrap: wrap;        /* para que en móvil se rompa a otra línea */
+/*Módulos componentes*/
+.card-container {
+  display: flex; /* activa Flexbox */
+  justify-content: center; /* opcional: centra el bloque completo */
+  gap: 1.5rem; /* espacio entre cards */
+  flex-wrap: wrap; /* para que en móvil se rompa a otra línea */
 }
 
-.card-container .card{
-  width: 18rem;           /* ancho fijo para cada card */
+.card-container .card {
+  width: 18rem; /* ancho fijo para cada card */
 }
+
+/* Limita su tamaño y lo centra */
+#carouselExampleIndicators {
+  max-width: 960px;
+  max-height: 520px;
+  margin: 0 auto 1rem; /* <--- Cambiado de 3rem a 1rem */
+  overflow: hidden;
+}
+
+/* Las imágenes rellenan sin deformarse */
+#carouselExampleIndicators .carousel-inner img {
+  height: 100%; /* toma todo el alto disponible */
+  object-fit: cover; /* recorta manteniendo proporción */
+}
+
+@media (max-width: 575px) {
+  #carouselExampleIndicators {
+    max-width: 100%; /* ocupa todo el ancho del móvil */
+    max-height: 240px; /* más bajito en pantallas chicas */
+  }
+}
+/* Módulos layout*/
+/* ==== FOOTER FLEX ==== */
+#footer {
+  display: flex;
+  flex-wrap: wrap; /* se apila en pantallas chicas */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem; /* separación entre bloques */
+  padding: 1.5rem 2rem;
+  background: #ffd35c; /* dorado suave; cámbialo si quieres */
+  color: #222;
+  text-align: center; /* para móvil */
+}
+
+/* Logo a la izquierda */
+.footer-logo img {
+  max-height: 70px;
+}
+
+/* Texto central */
+.footer-text h5 {
+  margin: 0;
+  font-family: "Press Start 2P", monospace; /* fuente retro (opcional) */
+  font-size: 1.15rem;
+}
+
+.footer-text p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* RRSS a la derecha */
+.footer-rrss {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-rrss img {
+  width: 34px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-rrss img:hover {
+  transform: scale(1.15);
+}
+
+/* ===== Responsive: apilar todo en móvil ===== */
+@media (max-width: 575px) {
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-rrss {
+    justify-content: center;
+  }
+}
+#header {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
