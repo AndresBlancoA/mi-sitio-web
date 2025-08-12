@@ -2,10 +2,9 @@
 #carouselExampleIndicators {
   max-width: 960px;
   max-height: 520px;
-  margin: 0 auto 1rem;  /* <--- Cambiado de 3rem a 1rem */
+  margin: 0 auto;  /* <--- Cambiado de 3rem a 1rem */
   overflow: hidden;
 }
-
 
 /* Las imágenes rellenan sin deformarse */
 #carouselExampleIndicators .carousel-inner img{

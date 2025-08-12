@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #d95544;
+  background-color: brown;
 }
 
 /* Clase para párrafos destacados */
@@ -38,22 +38,20 @@ li {
 .box1 {
   width: 200px;
   height: 200px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(242, 241, 251);
   overflow: auto;
   margin: 0 auto;
 }
 
-
 .content-box-2 {
-  margin: 2rem auto 4rem;
   padding: 1.5rem 1rem;
   max-width: 960px;
 }
 
 /*Módulos componentes*/
 .card-container {
-  display: flex; 
-  justify-content: center; 
+  display: flex; /* activa Flexbox */
+  justify-content: center; /* opcional: centra el bloque completo */
   gap: 1.5rem; /* espacio entre cards */
   flex-wrap: wrap; /* para que en móvil se rompa a otra línea */
 }
@@ -62,11 +60,16 @@ li {
   width: 18rem; /* ancho fijo para cada card */
 }
 
+.row .card {
+  margin: 4rem;
+  background-color: brown;
+}
+
 /* Limita su tamaño y lo centra */
 #carouselExampleIndicators {
   max-width: 960px;
   max-height: 520px;
-  margin: 0 auto 1rem; /* <--- Cambiado de 3rem a 1rem */
+  margin: 0 auto; /* <--- Cambiado de 3rem a 1rem */
   overflow: hidden;
 }
 
@@ -82,16 +85,51 @@ li {
     max-height: 240px; /* más bajito en pantallas chicas */
   }
 }
+.shadow-inset-center {
+  -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+.my-card {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.my-card:hover {
+  animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 /* Módulos layout*/
 /* ==== FOOTER FLEX ==== */
 #footer {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* se apila en pantallas chicas */
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem; /* separación entre bloques */
   padding: 1.5rem 2rem;
-  background: #d95544;
+  background-color: brown;
   color: #222;
   text-align: center; /* para móvil */
 }
